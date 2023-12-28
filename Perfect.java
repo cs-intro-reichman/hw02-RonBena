@@ -4,7 +4,7 @@
 public class Perfect {
 	public static void main (String[] args) {
 	int N = Integer.parseInt(args[0]);
-	String Perfect = N + " is a perfect number since 24 = 1";
+	String Perfect = N + " is a perfect number since " + N + "= 1";
 	int divsum = 1;
 	int divisor= 2;
 		while (divisor < N){
