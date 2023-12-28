@@ -3,6 +3,18 @@
  */
 public class Divisors {
 	public static void main (String[] args) {
-		//// Put your code here
+		int divisor= 1;
+		int num= Integer.parseInt(args[0]);
+		while (divisor <= num){
+			if(num % divisor == 0){
+				System.out.println(divisor);
+				divisor++;
+			}
+			else {
+				divisor++;
+			}
+
+		}
+
 	}
 }
