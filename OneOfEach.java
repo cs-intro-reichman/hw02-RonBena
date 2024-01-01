@@ -6,5 +6,29 @@
 public class OneOfEach {
 	public static void main (String[] args) {
 		//// Put your code here
+	
+		String b = "b ";
+		String g = "g ";
+		double n =  Math.random();
+		if(n < 0.5)
+					{
+						System.out.print(b);
+						while ( n < 0.5) {
+							System.out.print(b);
+							n =  Math.random();
+						}
+						System.out.print(g);
+					}
+					else
+					{
+						System.out.print(g);
+						while ( n >= 0.5) {
+							System.out.print(g);
+							n =  Math.random();
+						}
+						System.out.print(b);
+					}
+		
+
 	}
 }
