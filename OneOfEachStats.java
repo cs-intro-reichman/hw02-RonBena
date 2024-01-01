@@ -39,23 +39,23 @@ public class OneOfEachStats {
 			if(rnd < 0.5)
 					{
 						while ( rnd < 0.5) {
-							System.err.print(b);
+							//System.err.print(b);
 							children ++;
 							rnd =  generator.nextDouble();
 						}
 						children++;
-						System.err.println(g);
+						//System.err.println(g);
 					
 					}
 					else
 					{
 						while ( rnd >= 0.5) {
-							System.err.print(g);
+							//System.err.print(g);
 							children ++;
 							rnd =  generator.nextDouble();
 						}
 						children ++;
-						System.err.println(b);
+						//System.err.println(b);
 					}
 			if (children == 2)	
 			{
