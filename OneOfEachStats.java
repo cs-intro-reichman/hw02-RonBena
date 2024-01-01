@@ -28,33 +28,34 @@ public class OneOfEachStats {
 		int chil2 = 0;
 		int chil3 = 0;
 		int chil4 = 0;
-		double sumchildren = 0;
+		double sumchildren = 0.0;
 		double average;
 		String b = "b ";
 		String g = "g ";
-		double rnd = generator.nextDouble();
+		
 		for(int i = 0; i < T; i++)
 		{
+			double rnd = generator.nextDouble();
 			if(rnd < 0.5)
 					{
 						while ( rnd < 0.5) {
-							//System.err.print(b);
-							rnd =  generator.nextDouble();
+							System.err.print(b);
 							children ++;
+							rnd =  generator.nextDouble();
 						}
 						children++;
-						//System.err.println(g);
+						System.err.println(g);
 					
 					}
 					else
 					{
 						while ( rnd >= 0.5) {
-							//System.err.print(g);
-							rnd =  generator.nextDouble();
+							System.err.print(g);
 							children ++;
+							rnd =  generator.nextDouble();
 						}
 						children ++;
-						//System.err.println(b);
+						System.err.println(b);
 					}
 			if (children == 2)	
 			{
@@ -68,7 +69,7 @@ public class OneOfEachStats {
 			{
 				chil4++;
 			}
-			sumchildren += children;
+			sumchildren = sumchildren + children;
 			children = 0;
 
 		}
