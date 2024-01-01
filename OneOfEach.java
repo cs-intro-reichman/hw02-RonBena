@@ -12,7 +12,6 @@ public class OneOfEach {
 		double n =  Math.random();
 		if(n < 0.5)
 					{
-						System.out.print(b);
 						while ( n < 0.5) {
 							System.out.print(b);
 							n =  Math.random();
@@ -21,7 +20,6 @@ public class OneOfEach {
 					}
 					else
 					{
-						System.out.print(g);
 						while ( n >= 0.5) {
 							System.out.print(g);
 							n =  Math.random();
