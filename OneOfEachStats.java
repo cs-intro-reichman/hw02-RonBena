@@ -14,6 +14,16 @@ public class OneOfEachStats {
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
+		//// In the previous version of this program, you used a statement like:
+		//// double rnd = Math.random();
+		//// Where "rnd" is the variable that stores the generated random value.
+		//// In this version of the program, replace this statement with:
+		//// double rnd = generator.nextDouble();
+		//// This statement will generate a random value in the range [0,1),
+		//// just like you had in the previous version, except that the 
+		//// randomization will be based on the given seed.
+		//// This is the only change that you have to do in the program.
+		    
 		int children=0;
 		int chil2 = 0;
 		int chil3 = 0;
@@ -29,7 +39,7 @@ public class OneOfEachStats {
 					{
 						while ( rnd < 0.5) {
 							//System.err.print(b);
-							rnd =  Math.random();
+							rnd =  generator.nextDouble();
 							children ++;
 						}
 						children++;
@@ -40,7 +50,7 @@ public class OneOfEachStats {
 					{
 						while ( rnd >= 0.5) {
 							//System.err.print(g);
-							rnd =  Math.random();
+							rnd =  generator.nextDouble();
 							children ++;
 						}
 						children ++;
@@ -77,17 +87,8 @@ public class OneOfEachStats {
 		}
 		else if(chil4 >= chil2 && chil4 >= chil3)
 		{
-			System.out.println("The most common number of children is " + chil4 + "or more.");
+			System.out.println("The most common number of children is " + chil4 + " or more.");
 		}
-		//// In the previous version of this program, you used a statement like:
-		//// double rnd = Math.random();
-		//// Where "rnd" is the variable that stores the generated random value.
-		//// In this version of the program, replace this statement with:
-		//// double rnd = generator.nextDouble();
-		//// This statement will generate a random value in the range [0,1),
-		//// just like you had in the previous version, except that the 
-		//// randomization will be based on the given seed.
-		//// This is the only change that you have to do in the program.
-		    
+		
 	}
 }
